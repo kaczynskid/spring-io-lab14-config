@@ -19,3 +19,9 @@ management:
         port: 2003
         protocol: "plaintext"
         step: "5s"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    health-check-url-path: "/admin/health"
+    status-page-url-path: "/admin/info"
