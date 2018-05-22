@@ -12,3 +12,10 @@ management:
   endpoint:
     health:
       show-details: "always"
+  metrics:
+    export:
+      graphite:
+        host: "172.17.0.2"
+        port: 2003
+        protocol: "plaintext"
+        step: "5s"
