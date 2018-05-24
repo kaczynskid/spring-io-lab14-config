@@ -12,3 +12,13 @@ spring:
 
 info:
   whatever: "hello"
+
+---
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        stockUpdate:
+          destination: "itemStockUpdates"
+          content-type: "application/json"

@@ -11,3 +11,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: "validate"
+
+---
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        checkoutItem:
+          destination: "itemStockUpdates"
+          content-type: "application/json"
